@@ -1,0 +1,23 @@
+body {
+	background-color: lightblue;
+	
+}
+
+h1{
+	font-family: arial;
+	text-align: center;
+	font-size: 60px;
+}
+
+ul{
+	padding: 25px 225px 100px;
+	font-family: verdana;
+	font-size: 20px;
+}
+
+img{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
