@@ -1,301 +1,79 @@
-.page{
-	position:absolute;
-	opacity:0.7;
-	width: 100%;
-    height: auto;
-
-  top: 0;
-  left: 0;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-	
-}
-
+<html>
+	<head>
+		<title>My Webpage</title>
+		<link href="../css/main.css" rel="stylesheet"/>
+		
+		
+	</head>
 
-html{
-	width:100%;
-	min-height:100%;
-}
+	<body>
 
-
-.rectangle {
-	position:absolute;
-	top:0%;
-	border: 2px grey;
-	border-style:dashed;
-  	background-color:rgb(255,215,71);
-	position: relative;
-	width: 100%;
-  	height: 6%;
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="../js/main.js"></script>
 
-  	box-sizing: border-box;
-  
-}
 
-.block {
-	position: absolute;
-	border-style:groove;
-	background-color:lightblue;
-	
-}
+		<img class = "page" id = "page2" src = "https://images.unsplash.com/photo-1503803548695-c2a7b4a5b875?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80">
+		
 
-#firstBlock{
-	top:15%;
-  	left:3%;
+		<div class="rectangle">
+			 <div class="block" id="firstBlock"> 
+   				<div class="hbutton" id="home" button type="button" onmouseover="mouseOverHome()" onmouseout="mouseOutHome()" onclick="clickHome()">Home</div>
+    			
+  			</div>
 
-  	padding-top: -0.5%;
-  	padding-bottom: -0.5%;
-  	padding-left: 0.5%;
-  	padding-right: 0.5%;
-}
+  			<div class="block" id="secondBlock">
+  				<div class="hbutton" id="aboutMe" button type="button" onmouseover="mouseOverAboutMe()" onmouseout="mouseOutAboutMe()" onclick="clickAboutMe()">About Me</div>
+  			</div>	
 
-#secondBlock{
-	top:15%;
-  	left:10%;
-  	
-  	padding-top: 0%;
-  	padding-bottom: 0%;
-  	padding-left: 0.5%;
-  	padding-right: 0.5%;
-}
+  			<div class="block" id="thirdBlock">
+  				<div class="hbutton" id="games" button type="button" onmouseover="mouseOverGames()" onmouseout="mouseOutGames()" onclick="clickGames()">Games</div>
+  			</div>
 
+		</div>
 
-#thirdBlock{
-	top:15%;
-  	left: 19%;
+		
 
-  	padding-top: -0.5%;
-  	padding-bottom: -0.5%;
-  	padding-left: 0.5%;
-  	padding-right: 0.5%;
-}
 
+		<div class="amheader">About Me</div>
+		
 
-.hbutton {
-	font-family: "georgia";
-	font-size:160%;
-	color:black;
+		<div>
+		<img class="amimg" id="gradImage" src="https://mail.google.com/mail/u/0?ui=2&ik=97970ef18d&attid=0.1&permmsgid=msg-f:1636082551098117932&th=16b48869716b0f2c&view=fimg&disp=thd&attbid=ANGjdJ9UtPJv9or_m_-OIS-j3OV3IW_ofoaybRA8C2rFmJqkK3UflflnV3BN-I62aRDqyPO59CthKnXF233WCm-Ky_nyr1qanrOIbrnbNQsaQ61H6Kl_da7whDSE5nA&ats=2524608000000&sz=w1920-h902">
+		</img>
+		</div>
+		
+		<div class="amtxt">
+			Name: Tommy Kim
+			<br><br>
+			Home: Pleasanton, California
+			<br><br>
+			Graduated: Foothill High School 2019
+			<br><br>
+			School: UC San Diego, Computer Science
+			<br><br>
+			Hobbies: Video Games, Saxophone
+			<br><br>
 
-}
+		</div>
 
 
-.himg {
-	display:block;
-	position:absolute;
-}
 
-#ucsd{
-	top: 1.3%;
-	left:80%;
-  	width: 3%; 
-  	height: 5%;
-  	visibility:visible;
-}
+		<button class="ambutton" type="button" id="saxButton" onclick="clickSax()">Play Me!</button>
 
+		<button class="ambutton" type="button" id="stopButton" onclick="stopSax()">Stop</button>
 
+		<button class="ambutton" type="button" id="songButton" onclick="changeSong()">Next</button>
 
+		
+		<img class="amimg" id="saxImage" onclick="clickSax()" src="https://images.vexels.com/media/users/3/149996/isolated/lists/2fc3047990bdfc3b1f49b01520c9c5f2-saxophone-musical-instrument-doodle.png">
 
+		<img class = amimg id="computer" src="http://clipart-library.com/images/8TxK4daac.jpg"> 
 
+		<img class="himg" id="ucsd" src="http://admin.xosn.com/downloads1/23092.jpg?&KEY=HUVSFHPEZBATOZJ.20070809185852&DB_ACCOUNT_TYPE=AGENT&skip_agent_menus=NO&DB_MENU_ID=286&skip_agent_info=NO&DB_LANG=C&DB_OEM_ID=5800">
 
+	</body>
+<html>
 
-.gtxt{
-	border-style:groove;
-	position:absolute;
-	margin-left: 10.2%;
-	margin-top:8%;
-	background-color:white;
-	padding-left:5px;
-	padding-right:5px;
-	visibility: visible;
-}
-
-
-
-.gbutton {
-	font-family: "georgia";
-	font-size:160%;
-	color:black;
-
-}
-
-#pbutton{
-	position:absolute;
-	visibility:hidden;
-	left:83%;
-	top:56%;
-}
-
-
-
-
-.gimg {
-
-	position:absolute;
-}
-
-#captain{
-	top:70%;
-	left:15%;
-}
-
-#bluefalcon{
-	position:absolute;
-	top:10%;
-	left:48%;
-	width:5%;
-	height:10%;
-
-}
-
-#toast{
-	left:200px;
-	top:250px;
-	width:5%;
-
-}
-
-
-
-
-#block{
-	position:absolute;
-
-	width:12%;
-	height:12%;
-	top:60%;
-	left:80%;
-}
-
-
-#block2 {
-	position:absolute;
-  
-	 border: 1px solid #d3d3d3;
-    background-color: #f1f1f1;
-    	
-
-	width:12%;
-	height:12%;
-	top:60%;
-	left:60%;
-}
-
-
-
-
-
-
-
-
-
-
-.amheader {
-	position:absolute;
-	font-size:300%;
-	top:18%;
-	left:28%;
-	font-family:"georgia";
-	font-style:italic;
-	font-weight:600;
-	text-decoration: overline;
-	color:white;
-}
-
-
-
-
-.amimg {
-	display:block;
-	position:absolute;
-
-}
-
-#gradImage{
-	margin-left:59%;
-	margin-top:5%;
-  	width:28%;
-  	height:64%;
-}
-
-
-#saxImage{
-	left:22%;
-	top: 50%;
-	width:9%;
-	height:20%;
-}
-
-#computer{
-	left:36%;
-	top:56%;
-	width:8%;
-	height:14%;
-	visibility: visible;
-}
-
-
-
-
-.amtxt{
-	position:absolute;
-	overflow:auto;
-	font-family:"times new roman";
-	font-size:120%;
-	color:black;
-
-	text-align:center;
-
-	border: 3px solid;
-	border-style: double;
-	border-radius:5%;
-	
-	width: 28%;
-  	height: 64%;
-  	box-sizing: border-box;
-
-  	padding-top:5%;
-
-  	margin-left:20.5%;
-  	margin-top:5%;
-}
-
-
-
-
-.ambutton{
-	position:absolute;
-	font-family:"times new roman";
-	font-weight:600;
-
-	
-}
-
-#nextButton{
-	margin-left:71%;
-	margin-top:3%;
-}
-
-
-#saxbutton{
-	margin-left:26%;
-	margin-top:32%;
-}
-
-#stopbutton{
-	margin-left:30%;
-	margin-top:37%;
-	visibility:hidden;
-	font-size:20px;
-}
-
-#songButton{
-	margin-left:36%;
-	margin-top:37%;
-	visibility:hidden;
-	font-size:20px;
-}
 
 
 
